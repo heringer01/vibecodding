@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Snake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scene-backdrop"></div>
+    <div class="scene-glow scene-glow-one"></div>
+    <div class="scene-glow scene-glow-two"></div>
+
+    <div class="app-shell">
+        <header class="hud">
+            <div class="brand">Neon Snake</div>
+            <div class="stats">
+                <div class="stat">
+                    <span>Score</span>
+                    <strong id="score">0</strong>
+                </div>
+                <div class="stat">
+                    <span>Best</span>
+                    <strong id="best">0</strong>
+                </div>
+                <div class="stat">
+                    <span>Level</span>
+                    <strong id="level">1</strong>
+                </div>
+            </div>
+        </header>
+
+        <div class="canvas-shell">
+            <canvas id="gameCanvas" width="720" height="720"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn">Iniciar Jogo</button>
+            <button id="pauseBtn" disabled>Pausar</button>
+            <button id="fullscreenBtn">Tela cheia</button>
+        </div>
+
+        <div class="status-bar" id="statusText">Mapa 1 · Neon Garden</div>
+
+        <div class="menu-screen" id="menuScreen">
+            <div class="menu-panel">
+                <h2>Escolha seu Modo</h2>
+                <div class="mode-picker">
+                    <button class="mode-option active" data-mode="classic" title="Jogo clássico com progressão gradual. Dificuldade aumenta conforme avança.">
+                        <span class="mode-title">Classic Mode</span>
+                        <span class="mode-desc">Progressão gradual</span>
+                    </button>
+                    <button class="mode-option" data-mode="speed" title="Velocidade aumenta progressivamente. Teste seus reflexos ao máximo!">
+                        <span class="mode-title">Speed Mode</span>
+                        <span class="mode-desc">Fica cada vez mais rápido</span>
+                    </button>
+                    <button class="mode-option" data-mode="obstacle" title="Mapas com muitos obstáculos. Navegue por labirintos cada vez mais complexos.">
+                        <span class="mode-title">Obstacle Mode</span>
+                        <span class="mode-desc">Labirintos desafiadores</span>
+                    </button>
+                    <button class="mode-option" data-mode="survival" title="Inimigos aparecem e se movem. Evite-os enquanto coleta comida.">
+                        <span class="mode-title">Survival Mode</span>
+                        <span class="mode-desc">Enemigos em movimento</span>
+                    </button>
+                </div>
+                <div class="tooltip" id="modeTooltip" style="display: none;"></div>
+
+                <h2 style="margin-top: 30px;">Escolha sua cobra</h2>
+                <div class="snake-picker">
+                    <button class="snake-option active" data-snake="classic">Classic</button>
+                    <button class="snake-option" data-snake="blaze">Blaze</button>
+                    <button class="snake-option" data-snake="shadow">Shadow</button>
+                    <button class="snake-option" data-snake="titan">Titan</button>
+                </div>
+                <p>Se movimente com as setas, use espaço para pausar e sobreviva aos mapas.</p>
+                <button id="playBtn" class="primary">Jogar</button>
+            </div>
+        </div>
+
+        <div class="game-over" id="gameOver" style="display: none;">
+            <div class="game-over-content">
+                <h2>Game Over</h2>
+                <p>Sua pontuação: <span id="finalScore">0</span></p>
+                <button id="restartBtn" class="danger">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
