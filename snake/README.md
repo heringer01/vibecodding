@@ -103,10 +103,48 @@ Modifique `style.css` para mudanças de tema e cores.
 
 ## 📝 Notas de Desenvolvimento
 
-- **Desenvolvido por:** GitHub Copilot
+### Autoria
+**Este projeto foi desenvolvido completamente por GitHub Copilot** de forma autônoma, incluindo:
+
+✅ **Arquitetura e Design:**
+- Estrutura Electron completa do zero
+- Sistema de game loop com canvas
+- Gerenciamento de estado e colisões
+
+✅ **Implementação:**
+- Código HTML5/CSS3 totalmente funcional
+- Lógica de gameplay em JavaScript puro
+- Configuração Electron e build scripts
+
+✅ **Recursos Avançados:**
+- Sistema de progressão com dificuldade dinâmica
+- Múltiplos tipos de cobras e alimentos
+- Efeitos visuais 3D e tema neon customizado
+- Gerenciamento de tela cheia
+
+✅ **Compilação e Assinatura:**
+- Build para executável Windows portável
+- Assinatura digital com certificado próprio
+- Otimização de performance
+
+✅ **Documentação:**
+- README.md completo
+- Instruções de instalação e desenvolvimento
+- Arquitetura do projeto
+
+✅ **Controle de Versão:**
+- Inicialização do repositório Git
+- Commits com histórico detalhado
+- Push para GitHub
+- Configuração de .gitignore
+
+---
+
+- **Desenvolvido por:** GitHub Copilot (Autônomo)
 - **Data:** 13/08/2026
 - **Versão:** 1.0.0
 - **Licença:** MIT
+- **Status:** ✅ Completo e Funcional
 
 ### Melhorias Futuras
 - [ ] Leaderboard online
